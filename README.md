@@ -24,9 +24,9 @@ put_all_together.ipynb: A notebook when we put everything together. It captures 
 3. In terms of the input image size, I initially think it won't matter as only convolution layers are used in the model. However, when I test it, using arbitrary input size significantly deteriorates the output. I believe this is because the anchor boxes are tied to the original size. So my way to get around it is to insert the input figure (HxW) into a grey square image, whose height H' is the longer one between H and W, using the PasteImage transform in mytransforms.py. Then do the regular resizing. Some extra post-processing is needed for the output bounding box to make things self-consistent, and please refers put_all_together.ipynb.
 
 ## Libraries
-python==3.9.18
-pytorch==1.12.1
-torchvision==0.13.1
-pillow==8.1.2
-onnx==1.14.0
-opencv==4.5.1
+python=3.9.18  
+pytorch=1.12.1  
+torchvision=0.13.1  
+pillow=8.1.2  
+onnx=1.14.0  
+opencv=4.5.1
