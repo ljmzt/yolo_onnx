@@ -7,7 +7,7 @@ from onnx import numpy_helper
 
 class MaxPoolSameSize(nn.Module):
     '''
-      specific for that stride=1, kernel_size=3, padding layer in tinyyolo
+      specific for that stride=1, kernel_size=2, padding layer in tinyyolo
     '''
     def __init__(self, kernel_size=2, stride=1):
         super().__init__()
